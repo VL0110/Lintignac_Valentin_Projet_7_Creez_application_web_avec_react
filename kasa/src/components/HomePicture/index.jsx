@@ -1,7 +1,11 @@
+// Importation image home et style 
+
 import HomePicturePhoto from '../../assets/home-picture.png'
 import styled from 'styled-components'
 import resolution from '../../utils/hooks/resolution'
 import { fadeIn } from '../../utils/animation'
+
+// Définition style contour de l'image, image, texte à l'intérieur, media only (tel)
 
 const HomePictureDiv = styled.div`
   margin: 20px auto;
@@ -64,6 +68,8 @@ const HomePictureTextLg = styled.p`
   }
 `
 
+// Appel "const" HomePicture avec les éléments de la section de la page (image, texte)
+
 const HomePicture = () => {
   return (
     <HomePictureDiv>
@@ -78,3 +84,4 @@ const HomePicture = () => {
 }
 
 export default HomePicture
+

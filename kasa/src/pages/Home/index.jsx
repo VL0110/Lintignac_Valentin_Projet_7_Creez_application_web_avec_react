@@ -1,3 +1,5 @@
+// Importation des éléments de la page (header,footer,card,picture) et des caractéristiques de mise en page 
+
 import Footer from '../../components/Footer'
 import Header from '../../components/Header/index'
 import styled from 'styled-components'
@@ -7,6 +9,8 @@ import Card from '../../components/Card'
 import LogementsData from '../../datas/logements.json'
 import { fadeIn } from '../../utils/animation'
 
+// Style du corps de page (css)
+
 const Main = styled.main`
   margin: auto;
   max-width: ${resolution.max};
@@ -15,6 +19,9 @@ const Main = styled.main`
   position relative;
   padding-bottom: 200px;
 `
+
+//Style du Card (css)
+
 const CardContainer = styled.ul`
   display: grid;
   justify-content: center;
@@ -29,6 +36,8 @@ const CardContainer = styled.ul`
     grid-template-columns: repeat(3, 1fr);
   }
 `
+
+// Création fonction Home avec les éléments de la page (header,main,picture,card(logements.json),footer)
 
 function Home() {
   return (

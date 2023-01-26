@@ -1,9 +1,13 @@
+// Importation des éléments de la page et du style
+
 import Header from '../../components/Header'
 import styled from 'styled-components'
 import colors from '../../utils/hooks/colors'
 import { Link } from 'react-router-dom'
 import resolution from '../../utils/hooks/resolution'
 import Footer from '../../components/Footer'
+
+// Définition style main, structure, erreur404, erreur text et redirection (css)
 
 const Main = styled.main`
   height: 100vh;
@@ -50,6 +54,8 @@ const RedirectionLink = styled(Link)`
     font-size: 18px;
   }
 `
+
+// Appel "const" Error avec les éléments de la page (header,main,contenterror,error404,errortext,redirection,footer)
 
 const Error = () => {
   return (

@@ -1,6 +1,10 @@
+// Importation image (logo) et style 
+
 import HeaderLogo from '../../assets/logo.png'
 import styled from 'styled-components'
 import resolution from '../../utils/hooks/resolution'
+
+// Définition style contour du logo, media only (tel)
 
 const LogoDiv = styled.a`
   height: 100%;
@@ -17,6 +21,8 @@ const LogoImg = styled.img`
     width: 200px;
   }
 `
+
+// Appel "const" Logo avec les éléments de la section de la page (logo)
 
 const Logo = () => {
   return (

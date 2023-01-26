@@ -1,3 +1,5 @@
+// Définition de la couleur principale du site
+
 const colors = {
     primary: '#FF6060'
 }

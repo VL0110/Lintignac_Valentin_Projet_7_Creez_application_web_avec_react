@@ -1,8 +1,12 @@
+// Importation logo, nav, styles
+
 import Logo from './logo'
 import styled from 'styled-components'
 import Nav from './nav'
 import resolution from '../../utils/hooks/resolution'
 import { fadeIn } from '../../utils/animation'
+
+// Définition style header, media only (tel)
 
 const HeaderDiv = styled.header`
   max-width: ${resolution.max};
@@ -20,6 +24,8 @@ const HeaderDiv = styled.header`
   }
 `
 
+// Appel "const" Header avec les éléments de la section de la page (logo,nav)
+
 const Header = () => {
   return (
     <HeaderDiv>
@@ -30,3 +36,5 @@ const Header = () => {
 }
 
 export default Header
+
+

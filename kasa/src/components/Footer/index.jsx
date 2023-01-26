@@ -1,6 +1,10 @@
+// Importation logo (footer), styles
+
 import styled from 'styled-components'
 import Logo from '../../assets/footer-logo.png'
 import resolution from '../../utils/hooks/resolution'
+
+// Définition style footer, logo footer, media only (tel)
 
 const DivFooter = styled.footer`
   background-color: black;
@@ -28,6 +32,8 @@ const RightsFooter = styled.p`
     font-size: 18px;
   }
 `
+
+// Appel "const" Footer avec les éléments de la section de la page (logo,texte)
 
 const Footer = () => {
   return (

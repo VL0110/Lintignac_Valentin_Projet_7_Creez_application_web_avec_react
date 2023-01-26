@@ -1,7 +1,11 @@
+// Importation link, styles
+
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { fadeIn, translate } from '../../utils/animation'
 import resolution from '../../utils/hooks/resolution'
+
+// Définition style card, image, texte, media only (tel)
 
 const CardDiv = styled.li`
   list-style: none;
@@ -53,6 +57,8 @@ const CardTitle = styled.h2`
   max-width: 250px;
   transition: 0.2s ease-in-out;
 `
+
+// Appel "const" CardLink avec les éléments de la section de la page (card,logement,title)
 
 const Cardlink = styled(Link)``
 

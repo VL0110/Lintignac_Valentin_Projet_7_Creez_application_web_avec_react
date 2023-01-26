@@ -1,12 +1,15 @@
+// Import react, react-router-dom, style global et pages
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
-import Header from './components/Header'
 import Home from './pages/Home/index'
 import About from './pages/About/index'
 import Error from './pages/Error/index'
 import Logement from './pages/Logement/index'
+
+// Création "const" style général des pages (css)
 
 const GlobalStyle = createGlobalStyle`
 	html {
@@ -23,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 	  box-sizing: border-box;
 	}
 	`
-
+// Mise en place "const" root avec les routes pour chacune des pages
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 	root.render(

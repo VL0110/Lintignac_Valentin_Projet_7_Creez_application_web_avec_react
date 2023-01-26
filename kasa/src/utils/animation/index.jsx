@@ -1,3 +1,6 @@
+
+// Mise en place des transitions avec "keyframes"
+
 import { keyframes } from 'styled-components'
 
 export const fadeIn = keyframes`

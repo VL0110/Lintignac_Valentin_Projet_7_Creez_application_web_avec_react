@@ -1,8 +1,12 @@
+// Importation style 
+
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Colors from '../../utils/hooks/colors'
 import colors from '../../utils/hooks/colors'
 import resolution from '../../utils/hooks/resolution'
+
+// Définition style navigation, media only (tel)
 
 const NavDiv = styled.div`
   width: 100%;
@@ -35,6 +39,8 @@ const NavList = styled.li`
   }
 `
 
+// Appel "const" Nav avec les éléments de la section de la page (textes,styles)
+
 const Nav = () => {
   return (
     <NavDiv>
@@ -43,7 +49,7 @@ const Nav = () => {
           <NavLink to="/accueil">Accueil</NavLink>
         </NavList>
         <NavList>
-          <NavLink to="/about">A Propos</NavLink>
+          <NavLink to="/about">À Propos</NavLink>
         </NavList>
       </NavUl>
     </NavDiv>

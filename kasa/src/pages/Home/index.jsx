@@ -8,6 +8,10 @@ import HomePicture from '../../components/HomePicture'
 import Card from '../../components/Card'
 import LogementsData from '../../datas/logements.json'
 import { fadeIn } from '../../utils/animation'
+import { useEffect } from "react";
+
+
+
 
 // Style du corps de page (css)
 
@@ -40,6 +44,9 @@ const CardContainer = styled.ul`
 // Création fonction Home avec les éléments de la page (header,main,picture,card(logements.json),footer)
 
 function Home() {
+  useEffect(() => {
+		document.title = `Home`
+	}, )
   return (
     <div>
       <Header />

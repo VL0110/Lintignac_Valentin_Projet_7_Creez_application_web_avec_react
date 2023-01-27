@@ -7,6 +7,8 @@ import resolution from '../../utils/hooks/resolution'
 import AboutPicture from '../../components/AboutPicture'
 import AboutDropdown from '../../components/AboutDropdown'
 import { collapses } from '../../datas/collapses'
+import { useEffect } from "react";
+
 
 // Définition style main
 
@@ -22,6 +24,9 @@ const Main = styled.main`
 // Appel "const" About avec les éléments de la page (header,main,picture,dropdown,collapses,footer)
 
 const About = () => {
+  useEffect(() => {
+		document.title = `About`
+	}, )
   return (
     <div>
       <Header />

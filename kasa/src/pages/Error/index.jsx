@@ -6,6 +6,7 @@ import colors from '../../utils/hooks/colors'
 import { Link } from 'react-router-dom'
 import resolution from '../../utils/hooks/resolution'
 import Footer from '../../components/Footer'
+import { useEffect } from "react";
 
 // Définition style main, structure, erreur404, erreur text et redirection (css)
 
@@ -58,6 +59,9 @@ const RedirectionLink = styled(Link)`
 // Appel "const" Error avec les éléments de la page (header,main,contenterror,error404,errortext,redirection,footer)
 
 const Error = () => {
+  useEffect(() => {
+		document.title = `Error`
+	}, )
   return (
     <div>
       <Header />

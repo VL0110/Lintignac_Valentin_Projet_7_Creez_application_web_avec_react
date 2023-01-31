@@ -9,6 +9,7 @@ import About from './pages/About/index'
 import Error from './pages/Error/index'
 import Logement from './pages/Logement/index'
 
+
 // Création "const" style général des pages (css)
 
 const GlobalStyle = createGlobalStyle`
@@ -34,11 +35,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 		<GlobalStyle />
 		<Router>
 		  <Routes>
-			<Route exact path="/accueil" element={<Home />} />
+			<Route exact path="/*" element={<Home />} />
 			<Route path={`/logement/:id`} element={<Logement />} />
 			<Route path="/about" element={<About />} />
-			<Route path="/*" element={<Error />} />
+			<Route path="/Error" element={<Error />} />
 		  </Routes>
 		</Router>
 	  </React.StrictMode>
 	)
+

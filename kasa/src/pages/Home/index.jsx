@@ -10,9 +10,6 @@ import LogementsData from '../../datas/logements.json'
 import { fadeIn } from '../../utils/animation'
 import { useEffect } from "react";
 
-
-
-
 // Style du corps de page (css)
 
 const Main = styled.main`

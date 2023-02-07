@@ -13,11 +13,11 @@ Bienvenue dans ce projet qui vise à créer une application immobilière sous re
 
 1°) Installer React :
 
-    a)	Créez et  cloner le dépôt git sur VS code  
+a) Créez et  cloner le dépôt git sur VS code  
 
-    b)	Installer creat en utilisant le terminal : npx create-react-app (+ nom appli en minuscule)
+b) Installer creat en utilisant le terminal : npx create-react-app (+ nom appli en minuscule)
 
-    c)	Si vous utilisez yarn, installez yarn et les dépendances affiliées : 
+c) Si vous utilisez yarn, installez yarn et les dépendances affiliées : 
 - yarn global add yarn 
 - cd (nom appli)
 - yarn install (dépendances)

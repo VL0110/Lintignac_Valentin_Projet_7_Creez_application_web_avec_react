@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header/index'
 import styled from 'styled-components'
 import resolution from '../../utils/hooks/resolution'
-import HomePicture from '../../components/HomePicture'
+import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import LogementsData from '../../datas/logements.json'
 import { fadeIn } from '../../utils/animation'
@@ -48,7 +48,7 @@ function Home() {
     <div>
       <Header />
       <Main>
-        <HomePicture />
+        <Banner />
         <CardContainer>
           {LogementsData.map((logement) => (
             <Card

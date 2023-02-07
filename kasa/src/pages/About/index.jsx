@@ -4,8 +4,8 @@ import Header from '../../components/Header'
 import styled from 'styled-components'
 import Footer from '../../components/Footer'
 import resolution from '../../utils/hooks/resolution'
-import AboutPicture from '../../components/AboutPicture'
-import AboutDropdown from '../../components/AboutDropdown'
+import AboutPicture from '../../components/About/images'
+import AboutDropdown from '../../components/About/dropdown'
 import { collapses } from '../../datas/collapses'
 import { useEffect } from "react";
 

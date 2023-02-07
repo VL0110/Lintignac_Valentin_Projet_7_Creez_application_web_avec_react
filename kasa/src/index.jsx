@@ -2,45 +2,15 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { createGlobalStyle } from 'styled-components'
-import Home from './pages/Home/index'
-import About from './pages/About/index'
-import Error from './pages/Error/index'
-import Logement from './pages/Logement/index'
+import App from './routes/app'
 
+// Mise en place "const" root vers app (routes)
 
-// Création "const" style général des pages (css)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-const GlobalStyle = createGlobalStyle`
-	html {
-	  height: 100%;
-	}
-	body {
-	  font-family: 'Montserrat';
-	  height: 100%;
-	  margin: 15px 0px;
-	}
-	* { 
-	  padding: 0;
-	  margin: 0;
-	  box-sizing: border-box;
-	}
-	`
-// Mise en place "const" root avec les routes pour chacune des pages
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-	root.render(
-	  <React.StrictMode>
-		<GlobalStyle />
-		<Router>
-		  <Routes>
-			<Route exact path="/*" element={<Home />} />
-			<Route path={`/logement/:id`} element={<Logement />} />
-			<Route path="/about" element={<About />} />
-			<Route path="/Error" element={<Error />} />
-		  </Routes>
-		</Router>
-	  </React.StrictMode>
-	)
 

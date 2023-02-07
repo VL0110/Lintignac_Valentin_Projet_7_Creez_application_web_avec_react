@@ -1,13 +1,13 @@
 // Importation image home et style 
 
-import HomePicturePhoto from '../../assets/home-picture.png'
+import BannerPhoto from '../../assets/home-picture.png'
 import styled from 'styled-components'
 import resolution from '../../utils/hooks/resolution'
 import { fadeIn } from '../../utils/animation'
 
 // Définition style contour de l'image, image, texte à l'intérieur, media only (tel)
 
-const HomePictureDiv = styled.div`
+const BannerDiv = styled.div`
   margin: 20px auto;
   width: 100%;
   height: 111px;
@@ -18,7 +18,7 @@ const HomePictureDiv = styled.div`
     height: 223px;
   }
 `
-const HomePictureImg = styled.img`
+const BannerImg = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -27,7 +27,7 @@ const HomePictureImg = styled.img`
   mix-blend-mode: darken;
 `
 
-const HomePictureText = styled.p`
+const BannerText = styled.p`
   position: absolute;
   left: 9.6%;
   right: 32.53%;
@@ -42,7 +42,7 @@ const HomePictureText = styled.p`
   }
 `
 
-const HomePictureTextLg = styled.p`
+const BannerTextLg = styled.p`
   display: none;
   @media only screen and (min-width: ${resolution.medium}) {
     display: inline;
@@ -68,20 +68,20 @@ const HomePictureTextLg = styled.p`
   }
 `
 
-// Appel "const" HomePicture avec les éléments de la section de la page (image, texte)
+// Appel "const" Banner avec les éléments de la section de la page (image, texte)
 
-const HomePicture = () => {
+const Banner = () => {
   return (
-    <HomePictureDiv>
-      <HomePictureImg src={HomePicturePhoto} />
-      <HomePictureText>
+    <BannerDiv>
+      <BannerImg src={BannerPhoto} />
+      <BannerText>
         Chez vous,
         <br /> partout et ailleurs
-      </HomePictureText>
-      <HomePictureTextLg>Chez vous, partout et ailleurs</HomePictureTextLg>
-    </HomePictureDiv>
+      </BannerText>
+      <BannerTextLg>Chez vous, partout et ailleurs</BannerTextLg>
+    </BannerDiv>
   )
 }
 
-export default HomePicture
+export default Banner
 

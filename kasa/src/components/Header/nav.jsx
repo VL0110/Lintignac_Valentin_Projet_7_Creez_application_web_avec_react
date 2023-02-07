@@ -49,7 +49,7 @@ const Nav = () => {
           <NavLink to="/accueil">Accueil</NavLink>
         </NavList>
         <NavList>
-          <NavLink to="/about">À Propos</NavLink>
+          <NavLink to="/about">A Propos</NavLink>
         </NavList>
       </NavUl>
     </NavDiv>

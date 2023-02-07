@@ -6,16 +6,15 @@ import { useParams } from 'react-router-dom'
 import LogementsData from '../../datas/logements.json'
 import styled from 'styled-components'
 import resolution from '../../utils/hooks/resolution'
-import Profil from '../../components/Logement-Page/profil'
-import Place from '../../components/Logement-Page/place'
-import Stars from '../../components/Logement-Page/stars'
-import CoverImg from '../../components/Logement-Page/cover-image'
-import AboutDropdown from '../../components/AboutDropdown/'
+import Profil from '../../components/Logement/profil'
+import Place from '../../components/Logement/place'
+import Stars from '../../components/Logement/stars'
+import CoverImg from '../../components/Logement/images'
+import AboutDropdown from '../../components/About/dropdown'
 import Error from '../Error'
 import { Navigate } from 'react-router-dom'
 
 // Appel "const" Logement, définition styles et retour logement
-
 
 const Logement = () => {
   const { id } = useParams()

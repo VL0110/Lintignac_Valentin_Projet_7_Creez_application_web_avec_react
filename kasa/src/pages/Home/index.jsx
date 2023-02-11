@@ -42,7 +42,6 @@ const CardContainer = styled.ul`
 
 function Home() {
   useEffect(() => {
-		document.title = `Home`
 	}, )
   return (
     <div>

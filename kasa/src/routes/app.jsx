@@ -33,10 +33,10 @@ function App() {
 		<GlobalStyle />
 		<Router>
 		  <Routes>
-			<Route exact path="/*" element={<Home />} />
+			<Route exact path="/" element={<Home />} />
 			<Route path={`/logement/:id`} element={<Logement />} />
 			<Route path="/about" element={<About />} />
-			<Route path="/Error" element={<Error />} />
+			<Route path="*" element={<Error />} />
 		  </Routes>
 		</Router>
 	  </React.StrictMode>

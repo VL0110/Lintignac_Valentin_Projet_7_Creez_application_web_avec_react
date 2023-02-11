@@ -69,7 +69,7 @@ const Error = () => {
         <ContentErrorDiv>
           <Error404>404</Error404>
           <ErrorText>Oups! La page que vous demandez n'existe pas.</ErrorText>
-          <RedirectionLink to="/accueil">
+          <RedirectionLink to="/">
             Retourner sur la page d'acceuil
           </RedirectionLink>
         </ContentErrorDiv>

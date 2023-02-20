@@ -38,6 +38,8 @@ const CardContainer = styled.ul`
   }
 `
 
+
+
 // Création fonction Home avec les éléments de la page (header,main,picture,card(logements.json),footer)
 
 function Home() {

@@ -28,14 +28,16 @@ const NavLink = styled(Link)`
   font-size: 12px;
   list-style: none;
   text-decoration: none;
-  &:active
+  &:active, :focus
   {
     text-decoration: underline ${Colors.primary};
+
   }
   @media only screen and (min-width: ${resolution.medium}) {
     font-size: 18px;
   }
 `
+
 
 // Appel "const" Nav avec les éléments de la section de la page (textes,styles)
 
@@ -43,13 +45,11 @@ const Nav = () => {
   return (
     <NavDiv>
       <NavUl>
-      <NavLink to="/" >Accueil</NavLink>
-          <NavLink to="/about">A Propos</NavLink>
+      <NavLink to="/" tabindex="0">Accueil</NavLink>
+          <NavLink to="/about" >A Propos</NavLink>
       </NavUl>
     </NavDiv>
   )
 }
 
 export default Nav
-
-

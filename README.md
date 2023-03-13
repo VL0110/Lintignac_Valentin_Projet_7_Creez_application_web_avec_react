@@ -1,4 +1,4 @@
-# Lintignac_Valentin_Créer_une_application_web_avec_react
+# Lintignac_Valentin_une_application_avec_react
 
 Créez une application web de location immobilière avec React
 Readme :
